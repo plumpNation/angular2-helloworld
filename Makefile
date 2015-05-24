@@ -13,3 +13,7 @@ install:
 	tsd reinstall
 	npm install
 	bower install
+
+install-globals:
+	sudo npm install -g bower
+	sudo npm install -g typescript

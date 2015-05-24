@@ -8,6 +8,7 @@
         "removeComments": true,
         "noLib": false,
         "preserveConstEnums": true,
+        "emitDecoratorMetadata": true,
         "suppressImplicitAnyIndexErrors": true
     },
     "filesGlob": [
@@ -16,7 +17,6 @@
     ],
     "files": [
         "./main.ts",
-        "./typings/angular2/angular2.d.ts",
-        "./typings/tsd.d.ts"
+        "./typings/angular2/angular2.d.ts"
     ]
 }

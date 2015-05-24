@@ -7,18 +7,30 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
         case 4: return decorators.reduceRight(function(o, d) { return (d && d(target, key, o)) || o; }, desc);
     }
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 var angular2_1 = require('angular2/angular2');
 var MyAppComponent = (function () {
     function MyAppComponent() {
-        this.name = name;
+        this.name = 'Gavin';
+        this.friends = [];
     }
+    MyAppComponent.prototype.addFriend = function ($event) {
+        if ($event.which === 13) {
+            this.friends.push($event.target.value);
+            $event.target.value = null;
+        }
+    };
     MyAppComponent = __decorate([
         angular2_1.Component({
             selector: 'my-app'
         }),
         angular2_1.View({
-            templateUrl: 'helloworld.html'
-        })
+            templateUrl: 'friends.html',
+            directives: [angular2_1.For, angular2_1.If]
+        }), 
+        __metadata('design:paramtypes', [])
     ], MyAppComponent);
     return MyAppComponent;
 })();
