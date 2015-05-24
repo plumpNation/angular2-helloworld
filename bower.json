@@ -1,0 +1,19 @@
+{
+  "name": "angular2-helloworld",
+  "version": "0.0.0",
+  "homepage": "https://github.com/plumpNation/angular2-helloworld",
+  "authors": [
+    "Gavin King <gavin.king@pearson.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "traceur-runtime": "~0.0.89"
+  }
+}
